@@ -1,0 +1,76 @@
+\documentclass[a4paper, 12pt]{scrartcl}
+% A4 Papier, 12pt Schriftgröße
+% scriptartcl, weil article für englischsprachigen Raum optimiert
+
+
+
+% --- EINSTELLUNGEN FÜR DEUTSCHE DOKUMENTE:
+\usepackage[ngerman]{babel}
+% new german (neue deutsche Rechtschreibung)
+
+\usepackage[utf8]{inputenc}
+% utf8-Eingabe (Umlaute etc...)
+
+\usepackage[T1]{fontenc}
+% damit im erstellten PDF auch nach Wörtern mit Umlauten gesucht werden kann
+
+\usepackage{csquotes}
+% für deutsche Anführungsstriche
+
+\title{End-to-end-Learning Ansatz für autonomes Fahren im Miniatur Wunderland}
+\author{Nils-Ole Bickel, Michel Brüger}
+\date{\today}
+
+\begin{document}
+	
+\maketitle
+% Erstellt den Titel, entsprechend den Angaben in der Präambel
+	
+\tableofcontents
+% Automatisch erstelltes Inhaltsverzeichnis
+% zweimal kompilieren, damit Änderungen korrekt angezeigt werden
+
+\newpage
+% neue Seite anfangen, damit Titel und Inhaltsverzeichnis auf eigener Seite stehen
+	
+	\begin{abstract}
+ToDo: 
+
+evtl Abstract schreiben	
+
+- end-to-end learning erklären
+
+-- netzt sagt für übertragene Bilder lenkwinkel voraus
+
+-- übermittelte lenkwinkel als labelnetz sagt für übertragene Bilder lenkwinkel voraus
+	\end{abstract}
+
+	\section{Hardware}
+		\subsection{Raspberry Pi 4}
+		\subsection{Google Coral}
+		\subsection{Das Auto}
+		\subsection{Der Trainingsrechner}
+	
+	\section{Software}
+		\subsection{Auf dem Raspberry Pi verwendete Software}
+			\subsubsection{Python}
+			\subsubsection{Tensorflow lite}
+		\subsection{Auf dem Auto verwendete Software}
+		- irgendwie schickt es einen Videostream...
+		\subsection{Auf dem Trainingsrechner verwendete Software}
+			\subsubsection{Anaconda}
+			- Virtual Environments \\
+			- Python \\
+			- Tensorflow \\
+			- Tensorflow lite converter (heisst der so?) \\
+			
+		\section{Das Netz}
+			\subsection{Implementierung}
+			\subsection{Training}
+				\subsubsection{Trainingsdaten}
+				\subsubsection{Anzahl Epochen}
+				\subsubsection{...}
+			
+	\section{Ergebnisse/Fazit}
+	- Genauigkeit der Berechneten Lenkwinkel noch nicht erprobt...
+\end{document}

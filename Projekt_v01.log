@@ -1,0 +1,284 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.25)  25 FEB 2020 12:54
+entering extended mode
+**./Projekt_v01.tex
+(Projekt_v01.tex
+LaTeX2e <2020-02-02> patch level 3
+L3 programming layer <2020-02-21>
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrart
+cl.cls"
+Document Class: scrartcl 2020/01/24 v3.29 KOMA-Script document class (article)
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkba
+se.sty"
+Package: scrkbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbas
+e.sty"
+Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlfi
+le.sty"
+Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
+)))
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\tocbas
+ic.sty"
+Package: tocbasic 2020/01/24 v3.29 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box45
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 137.
+Package scrartcl Info: You've used standard option `12pt'.
+(scrartcl)             This is correct!
+(scrartcl)             Internally I'm using `fontsize=12pt'.
+(scrartcl)             If you'd like to set the option with \KOMAoptions,
+(scrartcl)             you'd have to use `fontsize=12pt' there
+(scrartcl)             instead of `12pt', too.
+Class scrartcl Info: File `scrsize12pt.clo' used to setup font sizes on input l
+ine 2212.
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrsiz
+e12pt.clo"
+File: scrsize12pt.clo 2020/01/24 v3.29 KOMA-Script font size class option (12pt
+)
+)
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\typear
+ea.sty"
+Package: typearea 2020/01/24 v3.29 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count167
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 12
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 448.13095pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 635.5pt
+(typearea)              \topmargin      = -41.72441pt
+(typearea)              \headheight     = 18.125pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 1719.
+)
+\c@part=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\scr@dte@section@maxnumwidth=\skip53
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 4723.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 4723.
+\scr@dte@part@maxnumwidth=\skip54
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 4731.
+\scr@dte@subsection@maxnumwidth=\skip55
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 4741.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 4741.
+\scr@dte@subsubsection@maxnumwidth=\skip56
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 4751.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 4751.
+\scr@dte@paragraph@maxnumwidth=\skip57
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 4761.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 4761.
+\scr@dte@subparagraph@maxnumwidth=\skip58
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 4771.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 4771.
+\abovecaptionskip=\skip59
+\belowcaptionskip=\skip60
+\c@pti@nb@sid@b@x=\box46
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 6002.
+\scr@dte@figure@maxnumwidth=\skip61
+\c@figure=\count174
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 6014.
+\scr@dte@table@maxnumwidth=\skip62
+\c@table=\count175
+Class scrartcl Info: Redefining `\numberline' on input line 6178.
+\bibindent=\dimen134
+)
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
+Package: babel 2020/02/14 3.40 The Babel package
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def
+"
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\ngerm
+an.ldf"
+Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
+phy)
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\ngerm
+anb.ldf"
+Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
+aphy)
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count176
+\U@D=\dimen135
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
+ef")
+\bbl@readstream=\read2
+\bbl@dirlevel=\count177
+)
+Package babel Info: Making " an active character on input line 121.
+)))
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+) ("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty
+"
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.
+sty"
+Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.
+sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count178
+)
+\csq@reset=\count179
+\csq@gtype=\count180
+\csq@glevel=\count181
+\csq@qlevel=\count182
+\csq@maxlvl=\count183
+\csq@tshold=\count184
+\csq@ltx@everypar=\toks17
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.
+def"
+File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.
+cfg"
+File: csquotes.cfg 
+))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backen
+d-pdfmode.def"
+File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count185
+\l__pdf_internal_box=\box47
+) (Projekt_v01.aux)
+\openout1 = `Projekt_v01.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
+8.
+
+("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmss.fd"
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 28.
+
+(Projekt_v01.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `Projekt_v01.toc'.
+
+ [1
+
+
+{C:/Users/miche/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
+
+ []
+
+[2] [3] (Projekt_v01.aux) ) 
+Here is how much of TeX's memory you used:
+ 4781 strings out of 481545
+ 92031 string characters out of 2913488
+ 455197 words of memory out of 3000000
+ 20036 multiletter control sequences out of 15000+200000
+ 541367 words of font info for 43 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 45i,6n,56p,10108b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\miche\AppData\Local\MiKTeX\2.9\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\miche\AppData\Local\MiKTeX\2.9\
+fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\miche\AppData\Local\M
+iKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\miche\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1728.pk> <C:\Users\m
+iche\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <
+C:\Users\miche\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx
+2488.pk>
+Output written on Projekt_v01.pdf (3 pages, 77944 bytes).
+PDF statistics:
+ 234 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
