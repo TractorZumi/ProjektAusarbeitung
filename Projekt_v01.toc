@@ -9,8 +9,8 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Python}{2}%
 \contentsline {subsubsection}{\numberline {2.1.2}Tensorflow lite}{2}%
 \contentsline {subsection}{\numberline {2.2}Auf dem Auto verwendete Software}{2}%
-\contentsline {subsection}{\numberline {2.3}Auf dem Trainingsrechner verwendete Software}{2}%
-\contentsline {subsubsection}{\numberline {2.3.1}Anaconda}{2}%
+\contentsline {subsection}{\numberline {2.3}Auf dem Trainingsrechner verwendete Software}{3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Anaconda}{3}%
 \contentsline {section}{\numberline {3}Das Netz}{3}%
 \contentsline {subsection}{\numberline {3.1}Implementierung}{3}%
 \contentsline {subsection}{\numberline {3.2}Training}{3}%
