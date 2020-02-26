@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  26 FEB 2020 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  26 FEB 2020 12:58
 entering extended mode
 **./Projekt_v01.tex
 (Projekt_v01.tex
@@ -265,7 +265,7 @@ $[]$
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 74--78
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
@@ -288,9 +288,9 @@ erena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk>
 sx1728.pk> <C:\Users\Verena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/e
 c/dpi600\ecrm1728.pk> <C:\Users\Verena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
 /jknappen/ec/dpi600\ecsx2488.pk>
-Output written on Projekt_v01.pdf (3 pages, 105510 bytes).
+Output written on Projekt_v01.pdf (3 pages, 109169 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
+ 318 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
