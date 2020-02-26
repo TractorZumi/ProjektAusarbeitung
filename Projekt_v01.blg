@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Projekt_v01.aux
+The style file: alpha.bst
+Database file #1: references.bib
+Warning--empty journal in article
+You've used 1 entry,
+            2543 wiz_defined-function locations,
+            562 strings with 4732 characters,
+and the built_in function-call counts, 697 in all, are:
+= -- 53
+> -- 75
+< -- 0
++ -- 29
+- -- 29
+* -- 70
+:= -- 138
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 17
+chr.to.int$ -- 1
+cite$ -- 2
+duplicate$ -- 13
+empty$ -- 21
+format.name$ -- 29
+if$ -- 119
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 1
+newline$ -- 9
+num.names$ -- 3
+pop$ -- 18
+preamble$ -- 1
+purify$ -- 18
+quote$ -- 0
+skip$ -- 11
+stack$ -- 0
+substring$ -- 7
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 1
+while$ -- 3
+width$ -- 2
+write$ -- 14
+(There was 1 warning)

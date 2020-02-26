@@ -17,6 +17,9 @@
 \usepackage{csquotes}
 % für deutsche Anführungsstriche
 
+\usepackage{graphicx}
+% für Bilder
+
 \title{End-to-end-Learning Ansatz für autonomes Fahren im Miniatur Wunderland}
 \author{Nils-Ole Bickel, Michel Brüger}
 \date{\today}
@@ -95,6 +98,8 @@ evtl Abstract schreiben
 			
 			In unserer virtuellen Umgebung wird \emph{Python 3.7} und die aktuelle Version von \emph{Tensorflow} mit GPU Support installiert.
 			
+			Beim Training wird ein normales \emph{Tensorflow} Modell trainiert. Da auf dem  \emph{Raspberry Pi 4} nur \emph{Tensorflow Lite} Modelle ausgeführt werden sollen wird dies mit Hilfe des \emph{TFLiteConverter} von  \emph{Tensorflow}  in ein \emph{Tensorflow Lite} Modell umgewandelt.
+			
 			
 			- Virtual Environments \\
 			- Python \\
@@ -103,17 +108,66 @@ evtl Abstract schreiben
 			
 		\section{Das Netz}
 			\subsection{Implementierung}
-			Das Netzwerk besteht aus 11 Layern. Bei 6 davon handelt es sich um Convolutional Layer. Die anderen 5 sind fully-connected Layer. Die Convolutional Layer sind für die Featureerkennunng verantwortlich. Die ersten 4 haben einen Kernel der Größe 5x5 und Strides der Größe 2x2. Die anderen Convolutional Layer haben einen Kernen der Größe 3x3 und Strides der Größe 1x1. Anschließend kommen die 5 fully-connnnected Layer. Das als Ergebnis beschreibt den Lenkwinkel in einer abstrakten Form. Genauer ist es die Länge des Vektors (X, Y), die der Hall Sensor, an der Vorderachse des Auto, bei diesem Lenkeinschlag misst.\\ \\
-			Als Vorlage für das Netzwerk wurde das Netzwerk aus dem Paper [1] verwendet. Unsere Bilder haben eine Größe von 300x800. Dies ist deutlich größer als im Paper weshalb das Netzwerk um weitere Layer ergenzt wurde.
+			Das Netzwerk besteht aus 11 Layern. Bei 6 davon handelt es sich um Convolutional Layer. Die anderen 5 sind fully-connected Layer. Die Convolutional Layer sind für die Featureerkennung verantwortlich. Die ersten 4 haben einen Kernel der Größe 5x5 und Strides der Größe 2x2. Die anderen Convolutional Layer haben einen Kernen der Größe 3x3 und Strides der Größe 1x1. Anschließend kommen die 5 fully-connnnected Layer. Das Ergebnis beschreibt den Lenkwinkel in einer abstrakten Form. Genauer ist es die Länge des Vektors (X, Y), die der Hall Sensor, an der Vorderachse des Auto, bei diesem Lenkeinschlag misst.\\ \\
+			Als Vorlage für das Netzwerk wurde das Netzwerk aus dem Paper \cite{article} verwendet. Unsere Bilder haben eine Größe von 300x800. Dies ist deutlich größer als im Paper, weshalb das Netzwerk um weitere Layer, auf das oben beschriebene, erweitert wurde.
+		
+			\begin{verbatim}		
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 148, 398, 32)      2432      
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 72, 197, 64)       51264     
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 34, 97, 64)        102464    
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 15, 47, 64)        102464    
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 13, 45, 64)        36928     
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 11, 43, 64)        36928     
+_________________________________________________________________
+flatten (Flatten)            (None, 30272)             0         
+_________________________________________________________________
+dense (Dense)                (None, 1000)              30273000  
+_________________________________________________________________
+dense_1 (Dense)              (None, 100)               100100    
+_________________________________________________________________
+dense_2 (Dense)              (None, 50)                5050      
+_________________________________________________________________
+dense_3 (Dense)              (None, 10)                510       
+_________________________________________________________________
+dense_4 (Dense)              (None, 1)                 11        
+=================================================================
+Total params: 30,711,151
+Trainable params: 30,711,151
+Non-trainable params: 0
+_________________________________________________________________
+			\end{verbatim}
 			
 			\subsection{Training}
 				\subsubsection{Trainingsdaten}
-				Die Trainingsdaten wurden mit Hilfe des Autos aufgenommen. Das Auto ist entlang eines Drahtes nach dem Faller Car-System durch das Miniatur Wunderland gefahren. Dabei wurden Video-Stream und zugehörige Werte des Hall Sensors aufgezeichnet. Die obere Hälfte des Bildausschnitts wird verworfen. Dies führt dazu, dass großteils die Straße auf den Bildern zu sehen ist. Die Hoffnung ist, dass dadurch das Netzwerk nicht durch Häuser oder Deckenelemente im Miniatur Wunderland abgelenkt wird und somit allgemeiner eingesetzt werden kann. \\ \\
-				Die Bilder werden als BGR-Bilder mit 3 Kanälen zusammen mit den Daten zum Lenkwinkel in einer H5-Datei gespeichert. Dabei ist zu beachten, dass die Bilddaten bereits als float32 Werte gespeichert werden. Sonnst muss dieser rechenaufwändige Schritt während des Trainings durchgeführt werden. Eine Normierung der Bilddaten auf einen Wert zwischen 0 und 1 könnte zu einer Verbesserung der Ergebnisse vom Netzwerk führen. Allerdings würde es auf die Zeit, bis ein Bild bearbeitet wurde deutlich erhöhen, weshalb wir uns dagegen entschieden haben.
+				Die Trainingsdaten wurden mit Hilfe des Autos aufgenommen. Das Auto ist entlang eines Drahtes nach dem Faller Car-System durch das Miniatur Wunderland gefahren. Dabei wurden Video-Stream und zugehörige Werte des Hall Sensors aufgezeichnet. Die obere Hälfte des Bildausschnitts wird verworfen. Dies führt dazu, dass großteils die Straße auf den Bildern zu sehen ist [Abbildung \ref{fig:trainigsdaten}]. Die Hoffnung ist, dass dadurch das Netzwerk nicht durch Häuser oder Deckenelemente im Miniatur Wunderland abgelenkt wird und somit allgemeiner eingesetzt werden kann. \\ \\
+				Die Bilder werden als BGR-Bilder mit 3 Kanälen zusammen mit den Daten zum Lenkwinkel in einer H5-Datei gespeichert. Dabei ist zu beachten, dass die Bilddaten bereits als float32 Werte gespeichert werden. Sonst muss dieser rechenaufwändige Schritt während des Trainings durchgeführt werden. Eine Normierung der Bilddaten auf einen Wert zwischen 0 und 1 könnte zu einer Verbesserung der Ergebnisse vom Netzwerk führen. Allerdings würde es die Zeit, bis ein Bild bearbeitet wurde, deutlich erhöhen. Aufgrund dessen haben wir uns gegen eine Normierung entschieden.
+				
+				\begin{figure}[h!]
+				   	 \centering
+   					 \includegraphics{Trainingsdaten-1}
+					 \includegraphics{Trainingsdaten-2}
+					 \includegraphics{Trainingsdaten-3}
+  					  \caption{Beispiele aus den Trainingsdaten mit eigeblendeten Metadaten.}
+ 					   \label{fig:trainigsdaten}
+				\end{figure}
+				
 				\subsubsection{Optimierung}
 				Das Netzwerk wird dahingehend Trainiert die durchschnittlichen Quadratischen Abweichung (mse) zwischen dem Ergebnis des Netzes und den gemessenen Daten zum Lenkwinkel zu minimieren. Dies führt dazu, dass große Abweichungen besonders stark Gewichtet werden und kleinere nur Geringer. 
 				\subsubsection{...}
 			
 	\section{Ergebnisse/Fazit}
 	- Genauigkeit der Berechneten Lenkwinkel noch nicht erprobt...
+		
+	\bibliography{references}
+	\bibliographystyle{alpha}
+	\nocite{*}
+	
 \end{document}

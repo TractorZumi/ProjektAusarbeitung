@@ -1,0 +1,11 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{BTD{\etalchar{+}}16}
+
+\bibitem[BTD{\etalchar{+}}16]{article}
+Mariusz Bojarski, Davide Testa, Daniel Dworakowski, Bernhard Firner, Beat
+  Flepp, Prasoon Goyal, Larry Jackel, Mathew Monfort, Urs Muller, Jiakai Zhang,
+  Xin Zhang, Jake Zhao, and Karol Zieba.
+\newblock End to end learning for self-driving cars.
+\newblock 04 2016.
+
+\end{thebibliography}
