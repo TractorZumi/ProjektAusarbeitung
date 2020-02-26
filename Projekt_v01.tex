@@ -67,8 +67,22 @@ evtl Abstract schreiben
 	
 	\section{Software}
 		\subsection{Auf dem Raspberry Pi verwendete Software}
+			\subsubsection{Raspbian}
+			Als Betriebssystem auf dem \emph{Raspberry Pi 4} wird \emph{Raspbian Buster} verwendet. Dabei handelt es sich um eine auf Debian basierende Linux-Distribution.
+			
+			
 			\subsubsection{Python}
-			\subsubsection{Tensorflow lite}
+			Standardmäßig ist \emph{Python 3.7} in \emph{Raspbian Buster} enthalten. Dies ist für die Verwendung des \emph{Google Coral USB Accelerator} mit \emph{Tensorflow Lite} ausreichend.
+			
+			\subsubsection{Edge TPU runtime}
+			Die \emph{Edge TPU runtime} wird für die Kommunikation mit dem \emph{Google Coral USB Accelerator} benötigt.
+			
+			Während der Installation der \emph{Edge TPU runtime} kann man auswählen, ob man den \emph{Google Coral USB Accelerator} mit Standardgeschwindigkeit oder maximaler Geschwindigkeit (2x Standard) betreiben möchte. Da sich bei unseren Versuchen mit Standardgeschwindigkeit herausgestellt hat, dass der \emph{Raspberry Pi 4} bei der Vorbereitung der Bilder überhitzt, ist eine Installation mit maximaler Geschwindigkeit überflüssig.
+			
+			\subsubsection{Tensorflow Lite}
+			
+			
+			
 		\subsection{Auf dem Auto verwendete Software}
 		- irgendwie schickt es einen Videostream...
 		\subsection{Auf dem Trainingsrechner verwendete Software}
