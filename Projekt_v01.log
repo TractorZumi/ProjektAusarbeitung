@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  26 FEB 2020 12:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  26 FEB 2020 12:44
 entering extended mode
 **./Projekt_v01.tex
 (Projekt_v01.tex
@@ -259,32 +259,38 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 
-{C:/Users/Verena/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 72--76
+{C:/Users/Verena/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (6.34105pt too wide) in paragraph at lines 62--63
+$[]$ 
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 74--78
 
  []
 
 [3] (Projekt_v01.aux) ) 
 Here is how much of TeX's memory you used:
- 4787 strings out of 481556
- 92078 string characters out of 2913401
+ 4791 strings out of 481556
+ 92123 string characters out of 2913401
  454979 words of memory out of 3000000
- 20030 multiletter control sequences out of 15000+200000
- 542051 words of font info for 44 fonts, out of 3000000 for 9000
+ 20032 multiletter control sequences out of 15000+200000
+ 543526 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,6n,56p,10108b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Verena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Verena\AppData\Local\MiKTeX\2.9\fo
-nts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\Verena\AppData\Local\Mi
-KTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Verena\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\V
-erena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1728.pk> 
+ur/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\Verena\AppData\Local\MiKTeX\2.9\fo
+nts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Verena\AppData\Local\Mi
+KTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\Verena\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\V
+erena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> 
 <C:\Users\Verena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ec
-rm1728.pk> <C:\Users\Verena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/e
-c/dpi600\ecsx2488.pk>
-Output written on Projekt_v01.pdf (3 pages, 96634 bytes).
+sx1728.pk> <C:\Users\Verena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/e
+c/dpi600\ecrm1728.pk> <C:\Users\Verena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecsx2488.pk>
+Output written on Projekt_v01.pdf (3 pages, 105510 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
+ 309 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
