@@ -1,34 +1,34 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.25)  25 FEB 2020 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  26 FEB 2020 11:51
 entering extended mode
 **./Projekt_v01.tex
 (Projekt_v01.tex
-LaTeX2e <2020-02-02> patch level 3
-L3 programming layer <2020-02-21>
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrart
-cl.cls"
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrar
+tcl.cls"
 Document Class: scrartcl 2020/01/24 v3.29 KOMA-Script document class (article)
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkba
-se.sty"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkb
+ase.sty"
 Package: scrkbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbas
-e.sty"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrba
+se.sty"
 Package: scrbase 2020/01/24 v3.29 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
-y"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.s
+ty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlfi
-le.sty"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlf
+ile.sty"
 Package: scrlfile 2020/01/24 v3.29 KOMA-Script package (loading files)
 )))
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\tocbas
-ic.sty"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\tocba
+sic.sty"
 Package: tocbasic 2020/01/24 v3.29 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip47
 \scr@dte@tocline@numbox=\box45
@@ -45,13 +45,13 @@ Package scrartcl Info: You've used standard option `12pt'.
 Class scrartcl Info: File `scrsize12pt.clo' used to setup font sizes on input l
 ine 2212.
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrsiz
-e12pt.clo"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrsi
+ze12pt.clo"
 File: scrsize12pt.clo 2020/01/24 v3.29 KOMA-Script font size class option (12pt
 )
 )
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\typear
-ea.sty"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\typea
+rea.sty"
 Package: typearea 2020/01/24 v3.29 KOMA-Script package (type area)
 \ta@bcor=\skip48
 \ta@div=\count167
@@ -133,55 +133,60 @@ Package tocbasic Info: omitting babel extension for `lot'
 Class scrartcl Info: Redefining `\numberline' on input line 6178.
 \bibindent=\dimen134
 )
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2020/02/14 3.40 The Babel package
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.sty
 "
+Package: babel 2020/02/14 3.40 The Babel package
+
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.de
+f"
 File: switch.def 2020/02/14 3.40 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg
+"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\ngerm
-an.ldf"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\nger
+man.ldf"
 Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
 phy)
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\ngerm
-anb.ldf"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\nger
+manb.ldf"
 Language: ngermanb 2018/12/08 v2.11 German support for babel (post-1996 orthogr
 aphy)
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def
+"
 File: babel.def 2020/02/14 3.40 Babel common definitions
 \babel@savecnt=\count176
 \U@D=\dimen135
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
-ef")
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.
+def")
 \bbl@readstream=\read2
 \bbl@dirlevel=\count177
 )
 Package babel Info: Making " an active character on input line 121.
 )))
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty
+"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
-) ("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty
-"
+)
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.
-sty"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
+.sty"
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.
-sty"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox
+.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count178
 )
@@ -193,15 +198,15 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \csq@tshold=\count184
 \csq@ltx@everypar=\toks17
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.
-def"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
+.def"
 File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes.
-cfg"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/csquotes\csquotes
+.cfg"
 File: csquotes.cfg 
 ))
 Package csquotes Info: Checking for multilingual support...
@@ -209,9 +214,9 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backen
-d-pdfmode.def"
-File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backe
+nd-pdfmode.def"
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count185
 \l__pdf_internal_box=\box47
 ) (Projekt_v01.aux)
@@ -234,7 +239,7 @@ LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
 8.
 
-("C:\Users\miche\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmss.fd"
+("C:\Users\Verena\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmss.fd"
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -254,31 +259,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 
-{C:/Users/miche/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 62--66
+{C:/Users/Verena/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 63--67
 
  []
 
 [2] [3] (Projekt_v01.aux) ) 
 Here is how much of TeX's memory you used:
- 4781 strings out of 481545
- 92031 string characters out of 2913488
- 455197 words of memory out of 3000000
- 20036 multiletter control sequences out of 15000+200000
+ 4785 strings out of 481556
+ 92056 string characters out of 2913401
+ 454979 words of memory out of 3000000
+ 20029 multiletter control sequences out of 15000+200000
  541367 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,6n,56p,10108b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\miche\AppData\Local\MiKTeX\2.9\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\miche\AppData\Local\MiKTeX\2.9\
-fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\miche\AppData\Local\M
-iKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\miche\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1728.pk> <C:\Users\m
-iche\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <
-C:\Users\miche\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx
-2488.pk>
-Output written on Projekt_v01.pdf (3 pages, 78607 bytes).
+ <C:\Users\Verena\AppData\Local\MiKTeX\2.9\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\Verena\AppData\Local\MiKTeX\2.
+9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Verena\AppData\Loca
+l\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\Verena\A
+ppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1728.pk> <C:\Use
+rs\Verena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.
+pk> <C:\Users\Verena\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecsx2488.pk>
+Output written on Projekt_v01.pdf (3 pages, 81197 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
+ 243 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
