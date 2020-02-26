@@ -9,14 +9,14 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Raspbian}{3}%
 \contentsline {subsubsection}{\numberline {2.1.2}Python}{3}%
 \contentsline {subsubsection}{\numberline {2.1.3}Edge TPU runtime}{3}%
-\contentsline {subsubsection}{\numberline {2.1.4}Tensorflow Lite}{3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Tensorflow Lite Library für Python}{3}%
 \contentsline {subsection}{\numberline {2.2}Auf dem Auto verwendete Software}{3}%
 \contentsline {subsection}{\numberline {2.3}Auf dem Trainingsrechner verwendete Software}{3}%
 \contentsline {subsubsection}{\numberline {2.3.1}Anaconda}{3}%
-\contentsline {section}{\numberline {3}Das Netz}{3}%
-\contentsline {subsection}{\numberline {3.1}Implementierung}{3}%
+\contentsline {section}{\numberline {3}Das Netz}{4}%
+\contentsline {subsection}{\numberline {3.1}Implementierung}{4}%
 \contentsline {subsection}{\numberline {3.2}Training}{4}%
 \contentsline {subsubsection}{\numberline {3.2.1}Trainingsdaten}{4}%
-\contentsline {subsubsection}{\numberline {3.2.2}Optimierung}{4}%
-\contentsline {subsubsection}{\numberline {3.2.3}...}{4}%
-\contentsline {section}{\numberline {4}Ergebnisse/Fazit}{4}%
+\contentsline {subsubsection}{\numberline {3.2.2}Optimierung}{5}%
+\contentsline {subsubsection}{\numberline {3.2.3}...}{5}%
+\contentsline {section}{\numberline {4}Ergebnisse/Fazit}{5}%

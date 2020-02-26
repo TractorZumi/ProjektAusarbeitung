@@ -79,14 +79,23 @@ evtl Abstract schreiben
 			
 			Während der Installation der \emph{Edge TPU runtime} kann man auswählen, ob man den \emph{Google Coral USB Accelerator} mit Standardgeschwindigkeit oder maximaler Geschwindigkeit (2x Standard) betreiben möchte. Da sich bei unseren Versuchen mit Standardgeschwindigkeit herausgestellt hat, dass der \emph{Raspberry Pi 4} bei der Vorbereitung der Bilder überhitzt, ist eine Installation mit maximaler Geschwindigkeit überflüssig.
 			
-			\subsubsection{Tensorflow Lite}
-			
+			\subsubsection{Tensorflow Lite Library für Python}
+			Da auf dem \emph{Raspberry Pi 4} lediglich \emph{Tensorflow Lite} Modelle ausgeführt werden sollen reicht die Installation des \emph{Tensorflow Lite interpreter} anstelle aller Tensorflow Pakete.
 			
 			
 		\subsection{Auf dem Auto verwendete Software}
 		- irgendwie schickt es einen Videostream...
+		
+		
+		
 		\subsection{Auf dem Trainingsrechner verwendete Software}
+		Auf den Labor-PCs ist \emph{Anaconda} installiert.
 			\subsubsection{Anaconda}
+			In \emph{Anaconda} können unter Verwendung von \emph{Conda} virtuelle Umgebungen (Environments) erstellt werden, in denen voneinander unabhängige \emph{Python}-Installationen existieren können. 
+			
+			In unserer virtuellen Umgebung wird \emph{Python 3.7} und die aktuelle Version von \emph{Tensorflow} mit GPU Support installiert.
+			
+			
 			- Virtual Environments \\
 			- Python \\
 			- Tensorflow \\
