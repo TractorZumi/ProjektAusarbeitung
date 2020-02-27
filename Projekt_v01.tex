@@ -17,6 +17,8 @@
 \usepackage{csquotes}
 % für deutsche Anführungsstriche
 
+\usepackage[addtotoc]{abstract}
+
 \usepackage{graphicx}
 % für Bilder
 
@@ -28,7 +30,18 @@
 	
 \maketitle
 % Erstellt den Titel, entsprechend den Angaben in der Präambel
+
+\begin{abstract}
+Das Ziel dieses Artikels ist die Beschreibung des Vorgehens bei dem Versuch eine auf \emph{Machine Learning} basierende Lösung für ein Fahrzeug zu entwickeln das sich autonom durch das \emph{Miniaturwunderland} bewegen können soll.
+
+Es wird die verwendete Hardware beschrieben, die darauf verwendete Software, sowie auch der Aufbau des Netzes, welches durch Ende-zu-Ende-Lernen selbständig den der aktuellen Fahrsituation angepassten Lenkwinkel wählen soll.
+
+Auf das Fahrzeug selbst wird nicht näher eingegangen, lediglich auf die Kamera- und Sensordaten welche von diesem empfangen werden.
 	
+\end{abstract}
+
+\newpage	
+
 \tableofcontents
 % Automatisch erstelltes Inhaltsverzeichnis
 % zweimal kompilieren, damit Änderungen korrekt angezeigt werden
@@ -36,17 +49,7 @@
 \newpage
 % neue Seite anfangen, damit Titel und Inhaltsverzeichnis auf eigener Seite stehen
 	
-	\begin{abstract}
-ToDo: 
 
-evtl Abstract schreiben	
-
-- end-to-end learning erklären
-
--- netzt sagt für übertragene Bilder lenkwinkel voraus
-
--- übermittelte Lenkwinkel als Label, Netz sagt für übertragene Bilder Lenkwinkel voraus
-	\end{abstract}
 
 	\section{Hardware}
 		\subsection{Raspberry Pi 4}
@@ -59,14 +62,10 @@ evtl Abstract schreiben
 		
 		\subsection{Google Coral USB Accelerator}
 		Der \emph{Google Coral USB Accelerator} ist ein Tensor-Prozessor in Form eines USB-Sticks, der an einen Rechner wie den \emph{Raspberry Pi} angeschlossen werden kann, um die Machine Learning Operationen schnell und besonders energieeffizient durchzuführen. Dies kann der \emph{Raspberry Pi 4} zwar auch alleine bewerkstelligen, der \emph{Google Coral USB Accelerator} ist dabei aber deutlich schneller. Bei spontanen Vergleichen konnten wir eine 14-fache Geschwindigkeit bei der Objekterkennung in Bildern feststellen.
-		
-		
-		\subsection{Das Auto}
-		\textbf{\textit{\underline{darüber wissen wir eigentlich nichts, vielleicht Section lieber wieder löschen?}}}
-	
+
 	
 		\subsection{Der Trainingsrechner}
-		Das Netz wurde Trainiert auf einem der Laborrechner in Raum \textbf{\textit{\underline{???}}}. Dieser verfügt über einen \textbf{\textit{\underline{???}}} Prozessor und eine \emph{Nvidia Geforce GTX 1050 Ti} Grafikkarte, welche den Trainingsprozess deutlich beschleunigt, im Vergleich zum Training mit dem Prozessor.	
+		Das Netz wurde auf einem der Laborrechner trainiert. Dieser verfügt über eine \emph{Nvidia Geforce GTX 1050 Ti} Grafikkarte, welche den Trainingsprozess deutlich beschleunigt, im Vergleich zum Training mit der CPU.	
 	
 	\section{Software}
 		\subsection{Auf dem Raspberry Pi verwendete Software}
@@ -85,11 +84,7 @@ evtl Abstract schreiben
 			\subsubsection{Tensorflow Lite Library für Python}
 			Da auf dem \emph{Raspberry Pi 4} lediglich \emph{Tensorflow Lite} Modelle ausgeführt werden sollen reicht die Installation des \emph{Tensorflow Lite interpreter} anstelle aller Tensorflow Pakete.
 			
-			
-		\subsection{Auf dem Auto verwendete Software}
-		- irgendwie schickt es einen Videostream...
-		
-		
+				
 		
 		\subsection{Auf dem Trainingsrechner verwendete Software}
 		Auf den Labor-PCs ist \emph{Anaconda} installiert.
@@ -100,15 +95,11 @@ evtl Abstract schreiben
 			
 			Beim Training wird ein normales \emph{Tensorflow} Modell trainiert. Da auf dem  \emph{Raspberry Pi 4} nur \emph{Tensorflow Lite} Modelle ausgeführt werden sollen wird dies mit Hilfe des \emph{TFLiteConverter} von  \emph{Tensorflow}  in ein \emph{Tensorflow Lite} Modell umgewandelt.
 			
-			
-			- Virtual Environments \\
-			- Python \\
-			- Tensorflow \\
-			- Tensorflow lite converter (heisst der so?) \\
+	
 			
 		\section{Das Netz}
 			\subsection{Implementierung}
-			Das Netzwerk besteht aus 11 Layern. Bei 6 davon handelt es sich um Convolutional Layer. Die anderen 5 sind fully-connected Layer. Die Convolutional Layer sind für die Featureerkennung verantwortlich. Die ersten 4 haben einen Kernel der Größe 5x5 und Strides der Größe 2x2. Die anderen Convolutional Layer haben einen Kernen der Größe 3x3 und Strides der Größe 1x1. Anschließend kommen die 5 fully-connnnected Layer. Das Ergebnis beschreibt den Lenkwinkel in einer abstrakten Form. Genauer ist es die Länge des Vektors (X, Y), die der Hall Sensor, an der Vorderachse des Auto, bei diesem Lenkeinschlag misst.\\ \\
+			Das Netzwerk besteht aus 11 Layern. Bei 6 davon handelt es sich um Convolutional Layer. Die anderen 5 sind fully-connected Layer. Die Convolutional Layer sind für die Featureerkennung verantwortlich. Die ersten 4 haben einen Kernel der Größe 5x5 und Strides der Größe 2x2. Die anderen Convolutional Layer haben einen Kernel der Größe 3x3 und Strides der Größe 1x1. Anschließend kommen die 5 fully-connnnected Layer. Das Ergebnis beschreibt den Lenkwinkel in einer abstrakten Form. Genauer ist es die Länge des Vektors (X, Y), die der Hall Sensor, an der Vorderachse des Auto, bei diesem Lenkeinschlag misst.\\ \\
 			Als Vorlage für das Netzwerk wurde das Netzwerk aus dem Paper \cite{article} verwendet. Unsere Bilder haben eine Größe von 300x800. Dies ist deutlich größer als im Paper, weshalb das Netzwerk um weitere Layer, auf das oben beschriebene, erweitert wurde.
 		
 			\begin{verbatim}		
@@ -155,16 +146,14 @@ _________________________________________________________________
    					 \includegraphics{Trainingsdaten-1}
 					 \includegraphics{Trainingsdaten-2}
 					 \includegraphics{Trainingsdaten-3}
-  					  \caption{Beispiele aus den Trainingsdaten mit eigeblendeten Metadaten.}
+  					  \caption{Beispiele aus den Trainingsdaten mit eingeblendeten Metadaten.}
  					   \label{fig:trainigsdaten}
 				\end{figure}
 				
 				\subsubsection{Optimierung}
-				Das Netzwerk wird dahingehend Trainiert die durchschnittlichen Quadratischen Abweichung (mse) zwischen dem Ergebnis des Netzes und den gemessenen Daten zum Lenkwinkel zu minimieren. Dies führt dazu, dass große Abweichungen besonders stark Gewichtet werden und kleinere nur Geringer. 
-				\subsubsection{...}
-			
-	\section{Ergebnisse/Fazit}
-	- Genauigkeit der Berechneten Lenkwinkel noch nicht erprobt...
+				Das Netzwerk wird dahingehend Trainiert die durchschnittlichen Quadratischen Abweichung (mse) zwischen dem Ergebnis des Netzes und den gemessenen Daten zum Lenkwinkel zu minimieren. Dies führt dazu, dass große Abweichungen besonders stark Gewichtet werden und kleinere nur geringer. 
+		
+	
 		
 	\bibliography{references}
 	\bibliographystyle{alpha}
