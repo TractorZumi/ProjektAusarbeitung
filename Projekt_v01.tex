@@ -32,13 +32,13 @@
 \maketitle
 % Erstellt den Titel, entsprechend den Angaben in der Präambel
 
-\begin{abstract}
-Das Ziel dieses Artikels ist die Beschreibung des Vorgehens bei dem Versuch eine auf \emph{Machine Learning} basierende Lösung für ein Fahrzeug zu entwickeln das sich autonom durch das \emph{Miniaturwunderland} bewegen können soll.
 
-Es wird die verwendete Hardware beschrieben, die darauf verwendete Software, sowie auch der Aufbau und das Training des Netzes, welches durch Ende-zu-Ende-Lernen selbständig den der aktuellen Fahrsituation angepassten Lenkwinkel wählen soll.
 
-Auf das Fahrzeug selbst wird nicht näher eingegangen, lediglich auf die Kamera- und Sensordaten welche von diesem empfangen werden.
-	
+\begin{abstract}	
+Für autonome Miniaturfahrzeuge wird ein End-to-End-Learning-Verfahren entwickelt. Vom Miniaturfahrzeug aufgenommene Kamerabilder werden per WLAN an einen \emph{Raspberry Pi} übertragen. Im Voraus wird ein Neuronales Netz mit Kamerabildern mehrerer Trainingsfahrten im \emph{Miniaturwunderland}, bei denen das normale Lenksystem der Anlage verwendet wird, und den dazugehörigen Lenkwinkeln der Vorderachse des Miniaturfahrzeugs trainiert. 
+
+Im Testbetrieb wird dann mittels einer per USB an den \emph{Raspberry Pi} angeschlossenen Tensor Processing Unit (\emph{Google Coral}), unter Verwendung von \emph{Tensorflow Lite}, auf einem \emph{Linux}-Betriebssystem, von dem Neuronalen Netz der zur jeweiligen Situation passende Lenkwinkel berechnet.
+Als Teststrecke wird wie auch beim Training das \emph{Miniaturwunderland} benutzt.
 \end{abstract}
 
 \newpage	
