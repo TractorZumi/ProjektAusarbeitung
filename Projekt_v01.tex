@@ -49,16 +49,19 @@ Als Teststrecke wird wie auch beim Training das \emph{Miniaturwunderland} benutz
 
 \newpage
 % neue Seite anfangen, damit Titel und Inhaltsverzeichnis auf eigener Seite stehen
-	
+	\section{Einleitung}
+	- Vorteile von End-To-End Maschine Learning beim Autonomen Fahren \\
+	- Miniaturwunderland \\
+	- Eigendes Auto wurde gebaut
 
 
 	\section{Hardware}
 		\subsection{Raspberry Pi 4}
-		Die Hardware in dem Fahrzeug selbst ist nicht stark genug um aus den Kamerabildern den entsprechenden Lenkwinkel zu berechnen. Daher ist das Ziel, die Berechnung der Lenkwinkel auszulagern, auf einen Rechner, der im besten Fall unauffällig im \emph{Miniaturwunderland} "getarnt" werden kann. 
+		Für die Berechnung des benötigten Lenkwinkels sendet das Auto die Kameradaten an einen \emph{Raspberry Pi 4}. 
 		
-		Der \emph{Raspberry Pi 4} hat im Verhältnis zu seiner Größe potente Hardware und verfügt vor allem auch über zwei USB-3-Anschlüsse. Diese sind wichtig um das volle Potential aus dem \emph{Google Coral USB Accelerator} herauszuholen. Außerdem bietet er die Möglichkeit vollwertige Linux-Betriebssysteme zu installieren, was die Verwendung der für die AI-Lenkwinkel-Voraussagung notwendigen Software ermöglicht.
+		Die Auslagerung auf den \emph{Raspberry Pi 4} hat mehrere Vorteile. Der \emph{Raspberry Pi 4} stellt deutlich potentere Hardware zur Verfügung im Vergleich zum Auto. Er verfügt über zwei USB-3-Anschlüsse. Diese sind wichtig um das volle Potential aus dem \emph{Google Coral USB Accelerator} herauszuholen. Außerdem bietet er die Möglichkeit vollwertige Linux-Betriebssysteme zu installieren, was die Verwendung der für die AI-Lenkwinkel-Voraussagung notwendigen Software ermöglicht.
 		
-		Die Möglichkeit, den \emph{Raspberry Pi} über eine Powerbank per USB-C zu laden, macht es noch leichter ihn in der Kulisse zu verstecken, da man nicht noch ein Kabel zu einem Stromanschluss verlegen muss.
+		Im Vergleich zu anderen Computern war die Größe des \emph{Raspberry Pi 4} ein entscheidender Faktor. Der kleine Formfaktor ermöglicht es den \emph{Raspberry Pi 4} leicht im \emph{Miniatur Wunderland} zu verstecken. Die Möglichkeit, ihn über eine Powerbank per USB-C zu laden, macht dies noch leichter, da man nicht noch ein Kabel zu einem Stromanschluss verlegen muss.
 		
 		
 		\subsection{Google Coral USB Accelerator}
@@ -100,7 +103,7 @@ Als Teststrecke wird wie auch beim Training das \emph{Miniaturwunderland} benutz
 			
 		\section{Das Netz}
 			\subsection{Implementierung}
-			Das Netzwerk besteht aus 11 Layern. Bei 6 davon handelt es sich um Convolutional Layer. Die anderen 5 sind fully-connected Layer. Die Convolutional Layer sind für die Featureerkennung verantwortlich. Die ersten 4 haben einen Kernel der Größe 5x5 und Strides der Größe 2x2. Die anderen Convolutional Layer haben einen Kernel der Größe 3x3 und Strides der Größe 1x1. Anschließend kommen die 5 fully-connnnected Layer. Das Ergebnis beschreibt den Lenkwinkel in einer abstrakten Form. Genauer ist es die Länge des Vektors (X, Y), die der Hall Sensor, an der Vorderachse des Auto, bei diesem Lenkeinschlag misst.\\ \\
+			Das Netzwerk besteht aus 11 Layern. Bei 6 davon handelt es sich um Convolutional Layer. Die anderen 5 sind fully-connected Layer. Die Convolutional Layer sind für die Featureerkennung verantwortlich. Die ersten 4 haben einen Kernel der Größe 5x5 und Strides der Größe 2x2. Die anderen Convolutional Layer haben einen Kernel der Größe 3x3 und Strides der Größe 1x1. Anschließend kommen die 5 fully-connnnected Layer. Das Ergebnis beschreibt den Lenkwinkel. \\ \\
 			Als Vorlage für das Netzwerk wurde das Netzwerk aus dem Paper \cite{article} verwendet. Unsere Bilder haben eine Größe von 300x800. Dies ist deutlich größer als im Paper, weshalb das Netzwerk um weitere Layer, auf das oben beschriebene, erweitert wurde.
 		
 			\begin{verbatim}		
@@ -137,6 +140,9 @@ Non-trainable params: 0
 _________________________________________________________________
 			\end{verbatim}
 			
+			\subsection{Berechnung der Lenkwinkel}
+			Das Auto besitzt einen Hall Sensor an der Vorderachse. Statt eines Lenkwinkels in Grad wird deshalb der Lenkwinkel mit den Werten des Hall Sensors approximiert. Genauer stellt die Länge des Vektors(X, Y) vom Hall Sensor den Lenkwinkel in unserer Anwendung dar.
+			
 			\subsection{Training}
 				\subsubsection{Trainingsdaten}
 				Die Trainingsdaten wurden mit Hilfe des Autos aufgenommen. Das Auto ist entlang eines Drahtes nach dem Faller Car-System durch das Miniatur Wunderland gefahren. Dabei wurden Video-Stream und zugehörige Werte des Hall Sensors aufgezeichnet. Die obere Hälfte des Bildausschnitts wird verworfen. Dies führt dazu, dass großteils die Straße auf den Bildern zu sehen ist [Abbildung \ref{fig:trainigsdaten}]. Die Hoffnung ist, dass dadurch das Netzwerk nicht durch Häuser oder Deckenelemente im Miniatur Wunderland abgelenkt wird und somit allgemeiner eingesetzt werden kann. \\ \\
@@ -153,6 +159,13 @@ _________________________________________________________________
 				
 				\subsubsection{Optimierung}
 				Das Netzwerk wird dahingehend Trainiert die durchschnittlichen Quadratischen Abweichung (mse) zwischen dem Ergebnis des Netzes und den gemessenen Daten zum Lenkwinkel zu minimieren. Dies führt dazu, dass große Abweichungen besonders stark Gewichtet werden und kleinere nur geringer. 
+		
+	\section{Bewertung}
+	Im Rahmen der Ausarbeitung konnte das System noch nicht vollständig getestet werden. Dementsprechend können keine Aussagen über Genauigkeit und Eignung des Netzes getätigt werden. \\ \\
+	Das Netz wurde bereits in einer ähnlichen Anwendung getestet. Hierbei wurden Kamerabilder eines Handys an den \emph{Raspberry Pi 4} mit \emph{Google Coral USB Accelerator} gesendet und von einem \emph{Tensorflow Lite} Model ausgewertet. Das Model war darauf trainiert, statt einem Lenkwinkel, die aktuelle Ausrichtung des Handys zu bestimmen. Das Handy war hierbei statisch und konnte sich nur um die eigene Achse drehen. Die aussagen des Netzwerks waren bereits vielversprechend. Es ist allerdings aufgefallen, dass der \emph{Raspberry Pi 4} bereits nach kurzer Zeit überhitzt. Für zukünftige Test sollte dementsprechend eine Kühlung des \emph{Raspberry Pi 4} beachtet werden.
+	
+		\subsection {Ausblick}
+		Weiterführend muss die Implementierung des Systems vervollständigt werden und auf Genauigkeit geprüft werden. Anpassungen an dem Aufbau des Netzes könnten hierbei notwendig sein. Des weiteren muss man Möglichkeiten hinzufügen eine Route zu planen, sodass das Auto an Kreuzungen variable agieren kann.
 		
 	
 		
