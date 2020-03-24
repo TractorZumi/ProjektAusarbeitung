@@ -1,6 +1,13 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Projekt_v01.aux
 The style file: alpha.bst
 Database file #1: references.bib
+Warning--entry type for "www.miniatur-wunderland.de" isn't style-file defined
+--line 28 of file references.bib
+"{" immediately follows a field part---line 30 of file references.bib
+ :    url = \url
+ :              {https://www.miniatur-wunderland.de/},
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in www.miniatur-wunderland.de
 Warning--empty journal in article
 Warning--empty journal in article2
-(There were 2 warnings)
+(There was 1 error message)
