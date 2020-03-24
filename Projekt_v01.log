@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  24 MAR 2020 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  24 MAR 2020 15:19
 entering extended mode
 **./Projekt_v01.tex
 (Projekt_v01.tex
@@ -320,10 +320,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--167
 [5] (Projekt_v01.bbl [6 <./Trainingsdaten-1.png> <./Trainingsdaten-2.png> <./Tr
 ainingsdaten-3.png>]) [7] (Projekt_v01.aux) ) 
 Here is how much of TeX's memory you used:
- 5633 strings out of 481556
- 102907 string characters out of 2923631
- 466316 words of memory out of 3000000
- 20838 multiletter control sequences out of 15000+200000
+ 5634 strings out of 481556
+ 102919 string characters out of 2923631
+ 466322 words of memory out of 3000000
+ 20839 multiletter control sequences out of 15000+200000
  544605 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,6n,56p,10108b,269s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -341,9 +341,9 @@ eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\aaz526\AppData
 526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C
 :\Users\aaz526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx
 2488.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on Projekt_v01.pdf (7 pages, 531488 bytes).
+Output written on Projekt_v01.pdf (7 pages, 531895 bytes).
 PDF statistics:
- 477 PDF objects out of 1000 (max. 8388607)
+ 478 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
