@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  24 MAR 2020 15:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.19)  25 MAR 2020 13:07
 entering extended mode
 **./Projekt_v01.tex
 (Projekt_v01.tex
@@ -272,78 +272,76 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 34.
- [1
-
-
-{C:/Users/aaz526/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 53.
- [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+ [1
+
+
+{C:/Users/aaz526/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
+[3]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-10.
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+11.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [4]
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
+)
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
+[4]
 <Trainingsdaten-1.png, id=26, 200.75pt x 75.78313pt>
 File: Trainingsdaten-1.png Graphic file (type png)
 <use Trainingsdaten-1.png>
-Package pdftex.def Info: Trainingsdaten-1.png  used on input line 154.
+Package pdftex.def Info: Trainingsdaten-1.png  used on input line 155.
 (pdftex.def)             Requested size: 200.7495pt x 75.78293pt.
 <Trainingsdaten-2.png, id=28, 200.75pt x 75.78313pt>
 File: Trainingsdaten-2.png Graphic file (type png)
 <use Trainingsdaten-2.png>
-Package pdftex.def Info: Trainingsdaten-2.png  used on input line 155.
+Package pdftex.def Info: Trainingsdaten-2.png  used on input line 156.
 (pdftex.def)             Requested size: 200.7495pt x 75.78293pt.
 <Trainingsdaten-3.png, id=29, 200.75pt x 75.78313pt>
 File: Trainingsdaten-3.png Graphic file (type png)
 <use Trainingsdaten-3.png>
-Package pdftex.def Info: Trainingsdaten-3.png  used on input line 156.
+Package pdftex.def Info: Trainingsdaten-3.png  used on input line 157.
 (pdftex.def)             Requested size: 200.7495pt x 75.78293pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--167
+Underfull \hbox (badness 10000) in paragraph at lines 166--168
 
  []
 
-[5] (Projekt_v01.bbl [6 <./Trainingsdaten-1.png> <./Trainingsdaten-2.png> <./Tr
-ainingsdaten-3.png>]) [7] (Projekt_v01.aux) ) 
+[5 <./Trainingsdaten-1.png> <./Trainingsdaten-2.png> <./Trainingsdaten-3.png>]
+(Projekt_v01.bbl) [6] (Projekt_v01.aux) ) 
 Here is how much of TeX's memory you used:
  5634 strings out of 481556
  102919 string characters out of 2923631
- 466322 words of memory out of 3000000
+ 468322 words of memory out of 3000000
  20839 multiletter control sequences out of 15000+200000
  544605 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,6n,56p,10108b,269s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\aaz526\AppData\Local\Mi
-KTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\aaz526\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\a
-az526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> 
-<C:\Users\aaz526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ec
-sx1440.pk> <C:\Users\aaz526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/e
-c/dpi600\ecsx1728.pk> <C:\Users\aaz526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\aaz526\AppData\Local\MiKTeX\2.9\font
-s/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\aaz526\AppData\Local\MiKT
-eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\aaz526\AppData
-\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\aaz
-526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C
-:\Users\aaz526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx
-2488.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on Projekt_v01.pdf (7 pages, 531895 bytes).
+ 45i,7n,56p,10108b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\aaz526\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\aaz526\AppData\L
+ocal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\aaz52
+6\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\
+Users\aaz526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx14
+40.pk> <C:\Users\aaz526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dp
+i600\ecrm1200.pk> <C:\Users\aaz526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkn
+appen/ec/dpi600\ecsx1728.pk> <C:\Users\aaz526\AppData\Local\MiKTeX\2.9\fonts/pk
+/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\aaz526\AppData\Local\MiKTeX\2
+.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\aaz526\AppData\Loc
+al\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\aaz526\
+AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Us
+ers\aaz526\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx2488
+.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on Projekt_v01.pdf (6 pages, 531472 bytes).
 PDF statistics:
- 478 PDF objects out of 1000 (max. 8388607)
+ 473 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
